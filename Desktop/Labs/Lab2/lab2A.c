@@ -10,9 +10,7 @@ int loadEmployees(Employees employees[], const char* filename) {
     }
 
     int count = 0;
-    while (count < NUM_EMP && fscanf(file, "%s %s %d %s %s %s",
-                                      employees[count].fname,
-                                      employees[count].lname,
+    while (count < NUM_EMP && fscanf(file, "%s %s %d %s %s %s", employees[count].fname, employees[count].lname,
                                       &employees[count].id,
                                       employees[count].dependents[0],
                                       employees[count].dependents[1],
